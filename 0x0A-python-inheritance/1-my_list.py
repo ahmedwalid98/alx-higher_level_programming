@@ -2,11 +2,11 @@
 """class MyList inherit from list
 """
 
+
 class MyList(list):
-    """
-    args: list
-    methods: print sorted
-    """
+    """inherits from list"""
     def print_sorted(self):
-        """print list"""
+        """prints the list, but sorted
+        (ascending sort)
+        """
         print(sorted(self))
