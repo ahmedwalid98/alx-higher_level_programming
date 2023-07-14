@@ -18,3 +18,7 @@ class TestRectangle(unittest.TestCase):
     def test_id_with_rectangle_takes_id_as_arg(self):
         r3 = Rectangle(10, 2, 0, 0, 12)
         self.assertEqual(r3.id, 12)
+
+    def test_width_with_wrong_type(self):
+        with self.assertRaises(TypeError):
+            Rectangle(10, "2")
