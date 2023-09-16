@@ -1,4 +1,4 @@
 #!/bin/bash
 git add .
 git commit -m 'ORM'
-git pushsudo pip3 install mysqlclient
+git push
