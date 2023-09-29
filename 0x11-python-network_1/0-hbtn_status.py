@@ -1,4 +1,10 @@
 #!/usr/bin/python3
+"""A script that
+- fetches https://alx-intranet.hbtn.io/status.
+- uses urlib package
+"""
+
+
 import urllib.request
 if __name__ == "__main__":
     req = urllib.request.Request("https://alx-intranet.hbtn.io/status")
