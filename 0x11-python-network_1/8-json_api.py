@@ -7,7 +7,8 @@ import requests
 
 
 if __name__ == '__main__':
-    paylode = {'q': sys.argv[2] if sys.argv[2] else ""}
+    letter = "" if len(sys.argv) == 1 else sys.argv[1]
+    paylode = {'q': letter}
     res = requests.post('http://0.0.0.0:5000/search_user', data=paylode)
     try:
         response = res.json()
